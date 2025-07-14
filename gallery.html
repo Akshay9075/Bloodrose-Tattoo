@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Blood Rose Tattoo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img 
+                        src="https://scontent.fnag4-2.fna.fbcdn.net/v/t39.30808-6/451814163_1165661164638251_8848681852548832772_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HUUuUUCQu6QQ7kNvwFIfJqc&_nc_oc=AdmrXJFyxmfZaDuykoUZhg5FCvjeBvCR1uXPleq3EumlctJmUTlK8tZeNwFYCptExs1elQBOfdQJPlov0alLM8mV&_nc_zt=23&_nc_ht=scontent.fnag4-2.fna&_nc_gid=L7mvaQblh--L_z9bRNDS2w&oh=00_AfRvzg2wJWsbnOGcs2sV89zv-xYYez-Au1v1nfQDaW9zwA&oe=687854B6" 
+                        alt="Blood Rose Tattoo Logo" 
+                        class="logo-img responsive-img"
+                        style="max-width: 160px; width: 100%; height: 80px; display: block;"
+                    >
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="artists.html" class="nav-link">Artists</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>Explore our portfolio of custom artwork</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters-section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="traditional">Traditional</button>
+                <button class="filter-btn" data-filter="minimalist">Minimalist</button>
+                <button class="filter-btn" data-filter="watercolor">Watercolor</button>
+                <button class="filter-btn" data-filter="realistic">Realistic</button>
+                <button class="filter-btn" data-filter="geometric">Geometric</button>
+                <button class="filter-btn" data-filter="floral">Floral</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="fine-line">
+                    <div class="gallery-image">
+                        <img src="https://miro.medium.com/v2/resize:fit:4044/1*inJDHc2I8iAepfx-zVg9zw@2x.jpeg" alt="Minimalist Rose Tattoo" class="responsive-img gallery-pop-img" width="400" height="400">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Minimalist Rose</h3>
+                                <p>Artist: Sarah Black</p>
+                                <span class="category-tag">Fine Line</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="traditional">
+                    <div class="gallery-image">
+                        <img src="https://inkhappened.com/wp-content/uploads/2023/06/complete-sleeve-american-traditional-tattoo-jun-hyuck.jpg" alt="Traditional Tattoo Sample" class="responsive-img gallery-pop-img">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Classic Anchor</h3>
+                                <p>Artist: Mike Crimson</p>
+                                <span class="category-tag">Traditional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="watercolor">
+                    <div class="gallery-image">
+                        <img src="https://tattoogenda.com/wp-content/uploads/2023/04/watercolor-15.png" alt="Watercolor Tattoo Sample" class="responsive-img gallery-pop-img">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Watercolor Lotus</h3>
+                                <p>Artist: Emma Rose</p>
+                                <span class="category-tag">Watercolor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="realistic">
+                    <div class="gallery-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtP-zXM8reVG61WFY8B1s870gXRAe6Ul5ATw&s" alt="Realistic Tattoo Sample" class="responsive-img gallery-pop-img">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Portrait Realism</h3>
+                                <p>Artist: Emma Rose</p>
+                                <span class="category-tag">Realistic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="geometric">
+                    <div class="gallery-image">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5ecd2ca4480082565203fde7/c2c5710d-a338-45c6-997a-601c8368d51c/Britain-Jones.jpg" alt="Geometric Tattoo Sample" class="responsive-img gallery-pop-img">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Mandala Design</h3>
+                                <p>Artist: Sarah Black</p>
+                                <span class="category-tag">Geometric</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="floral">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/originals/b2/59/08/b2590808494f398f7259240093fbd7cb.jpg" alt="Floral Tattoo Sample" class="responsive-img gallery-pop-img">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Floral Sleeve</h3>
+                                <p>Artist: Emma Rose</p>
+                                <span class="category-tag">Floral</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="floral">
+                    <div class="gallery-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSEhmbqw_4IC9z2-jJYGTXzCcoRef_hOv61w&s" alt="Botanical Tattoo Sample" class="responsive-img gallery-pop-img">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Botanical Design</h3>
+                                <p>Artist: Emma Rose</p>
+                                <span class="category-tag">Floral</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Stats -->
+    <section class="gallery-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Completed Tattoos</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3>7</h3>
+                    <p>Tattoo Styles</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5.0</h3>
+                    <p>Star Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    // Pop image in place on click
+    document.addEventListener('DOMContentLoaded', function() {
+        let currentlyPopped = null;
+
+        function closePop() {
+            if (currentlyPopped) {
+                currentlyPopped.classList.remove('popped-img');
+                currentlyPopped.style.zIndex = '';
+                currentlyPopped.style.position = '';
+                currentlyPopped.style.width = '';
+                currentlyPopped.style.height = '';
+                currentlyPopped.style.boxShadow = '';
+                currentlyPopped.style.transform = '';
+                currentlyPopped.style.transition = '';
+                currentlyPopped.style.background = '';
+                currentlyPopped = null;
+            }
+        }
+
+        document.querySelectorAll('.gallery-pop-img').forEach(function(img) {
+            img.addEventListener('click', function(e) {
+                e.stopPropagation();
+                // If already popped, close it
+                if (currentlyPopped === img) {
+                    closePop();
+                    return;
+                }
+                // Close any other popped image
+                closePop();
+
+                // Get image position and size
+                const rect = img.getBoundingClientRect();
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+                // Set styles to pop in place
+                img.classList.add('popped-img');
+                img.style.position = 'absolute';
+                img.style.zIndex = 1001;
+                img.style.left = (rect.left + scrollLeft) + 'px';
+                img.style.top = (rect.top + scrollTop) + 'px';
+                img.style.width = rect.width + 'px';
+                img.style.height = rect.height + 'px';
+                img.style.transition = 'all 0.3s cubic-bezier(.4,2,.6,1)';
+                img.style.boxShadow = '0 8px 32px rgba(0,0,0,0.4)';
+                img.style.background = '#fff';
+
+                // Force reflow for transition
+                void img.offsetWidth;
+
+                // Animate to larger size in place
+                setTimeout(function() {
+                    img.style.width = Math.min(window.innerWidth * 0.9, 600) + 'px';
+                    img.style.height = 'auto';
+                    img.style.left = (window.innerWidth/2 - Math.min(window.innerWidth * 0.9, 600)/2 + scrollLeft) + 'px';
+                    img.style.top = (window.innerHeight/2 - Math.min(window.innerWidth * 0.9, 600)*rect.height/rect.width/2 + scrollTop) + 'px';
+                }, 10);
+
+                currentlyPopped = img;
+            });
+        });
+
+        // Close pop on click outside or on scroll/resize
+        document.addEventListener('click', function(e) {
+            if (currentlyPopped && !currentlyPopped.contains(e.target)) {
+                closePop();
+            }
+        });
+        window.addEventListener('scroll', closePop);
+        window.addEventListener('resize', closePop);
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closePop();
+        });
+    });
+    </script>
+    <style>
+    .gallery-pop-img.popped-img {
+        cursor: zoom-out !important;
+        border-radius: 12px !important;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.4) !important;
+        background: #fff !important;
+    }
+    </style>
+
+    <!-- Before & After -->
+    <section class="before-after-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Before & After</h2>
+                <p>See the transformation process and healing results</p>
+            </div>
+            <div class="before-after-grid">
+                <div class="before-after-item">
+                    <div class="before-after-images">
+                        <div class="before-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-image"></i>
+                                <p>Before</p>
+                            </div>
+                        </div>
+                        <div class="after-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-image"></i>
+                                <p>After</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="before-after-info">
+                        <h3>Cover-up Transformation</h3>
+                        <p>Professional cover-up work that completely transforms old tattoos into beautiful new designs.</p>
+                    </div>
+                </div>
+                <div class="before-after-item">
+                    <div class="before-after-images">
+                        <div class="before-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-image"></i>
+                                <p>Before</p>
+                            </div>
+                        </div>
+                        <div class="after-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-image"></i>
+                                <p>After</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="before-after-info">
+                        <h3>Touch-up Results</h3>
+                        <p>Restoring vibrancy and detail to existing tattoos with professional touch-up services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Inspired by Our Work?</h2>
+                <p>Ready to create your own custom tattoo? Book a consultation with our artists and bring your vision to life.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                    <a href="artists.html" class="btn btn-secondary">Meet Our Artists</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img 
+                            src="https://scontent.fnag4-2.fna.fbcdn.net/v/t39.30808-6/451814163_1165661164638251_8848681852548832772_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HUUuUUCQu6QQ7kNvwFIfJqc&_nc_oc=AdmrXJFyxmfZaDuykoUZhg5FCvjeBvCR1uXPleq3EumlctJmUTlK8tZeNwFYCptExs1elQBOfdQJPlov0alLM8mV&_nc_zt=23&_nc_ht=scontent.fnag4-2.fna&_nc_gid=L7mvaQblh--L_z9bRNDS2w&oh=00_AfRvzg2wJWsbnOGcs2sV89zv-xYYez-Au1v1nfQDaW9zwA&oe=687854B6" 
+                            alt="Blood Rose Tattoo Logo" 
+                            class="footer-logo-img responsive-img"
+                            style="max-width: 120px; width: 100%; height: 100px; display: block; margin-bottom: 15px; filter: hue-rotate(0deg) saturate(2) brightness(0.8) sepia(0.3);"
+                        >
+                    </div>
+                    <h3>Blood Rose Tattoo</h3>
+                    <p>Creating unique, custom designs that tell your story in a safe, professional environment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="artists.html">Artists</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Custom Designs</li>
+                        <li>Cover-up Tattoos</li>
+                        <li>Touch-ups</li>
+                        <li>Consultations</li>
+                        <li>Piercings</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> N Main Rd, opposite zodiac retail store, Liberty Phase 2, Ragvilas Society, Koregaon Park, Pune, India, 411001</p>
+                    <p><i class="fas fa-phone"></i> 75592 88879</p>
+                    <p><i class="fas fa-envelope"></i> bloodrosetattoostudio@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Blood Rose Tattoo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917559288879" class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html> 
